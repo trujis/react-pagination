@@ -31,12 +31,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/guillem/react-pagination.git"
+    "url": "https://github.com/trujis/react-pagination.git"
   },
   "bugs": {
-    "url": "https://github.com/guillem/react-pagination/issues"
+    "url": "https://github.com/trujis/react-pagination/issues"
   },
-  "homepage": "https://github.com/guillem/react-pagination#readme",
+  "homepage": "https://github.com/trujis/react-pagination#readme",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
