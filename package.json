@@ -1,0 +1,60 @@
+{
+  "name": "@trujis/react-pagination",
+  "version": "1.0.0",
+  "description": "A flexible and customizable pagination component for React with TypeScript and TailwindCSS",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "lint": "eslint src --ext .ts,.tsx",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "pagination",
+    "component",
+    "typescript",
+    "tailwindcss",
+    "ui",
+    "react-component",
+    "pagination-component",
+    "frontend"
+  ],
+  "author": "Guillem",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guillem/react-pagination.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guillem/react-pagination/issues"
+  },
+  "homepage": "https://github.com/guillem/react-pagination#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "rollup": "^4.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
+    "tailwindcss": "^3.4.0",
+    "tslib": "^2.6.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {}
+}

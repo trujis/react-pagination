@@ -1,0 +1,11 @@
+src/
+example/
+*.log
+.DS_Store
+tsconfig.json
+rollup.config.js
+tailwind.config.js
+.gitignore
+node_modules/
+.env
+.env.local
