@@ -14,15 +14,15 @@ A flexible and customizable pagination component for React with TypeScript and T
 ## Installation
 
 ```bash
-npm install @guillem/react-pagination
+npm install @trujis/react-pagination
 ```
 
 ## Basic Usage
 
 ```tsx
 import React, { useState } from 'react';
-import { Pagination } from '@guillem/react-pagination';
-import '@guillem/react-pagination/dist/styles.css';
+import { Pagination } from '@trujis/react-pagination';
+import '@trujis/react-pagination/dist/styles.css';
 
 function App() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -156,7 +156,7 @@ import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from 'lucide-r
 
 ```tsx
 import React, { useState, useEffect } from 'react';
-import { Pagination } from '@guillem/react-pagination';
+import { Pagination } from '@trujis/react-pagination';
 
 interface Item {
   id: number;
@@ -212,7 +212,7 @@ The component includes accessibility features:
 The package includes complete type definitions:
 
 ```typescript
-import type { PaginationProps, RenderButtonProps, PaginationRange } from '@guillem/react-pagination';
+import type { PaginationProps, RenderButtonProps, PaginationRange } from '@trujis/react-pagination';
 ```
 
 ## Contributing

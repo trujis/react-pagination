@@ -9,8 +9,6 @@ const mockData = Array.from({ length: 150 }, (_, i) => ({
 
 export const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [currentPageCustom, setCurrentPageCustom] = useState(1);
-  const [currentPageSimple, setCurrentPageSimple] = useState(1);
 
   const itemsPerPage = 10;
   const totalPages = Math.ceil(mockData.length / itemsPerPage);
@@ -33,6 +31,7 @@ export const App: React.FC = () => {
         </header>
 
         <section className="bg-white rounded-lg shadow-md p-6">
+          <h2>Total Pages: {totalPages}</h2>
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
             Example 1: Complete Pagination with Data
           </h2>
@@ -72,9 +71,9 @@ export const App: React.FC = () => {
           </p>
 
           <Pagination
-            currentPage={currentPageSimple}
-            totalPages={20}
-            onPageChange={setCurrentPageSimple}
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
             showFirstLast={false}
             className="justify-center"
           />
@@ -89,9 +88,9 @@ export const App: React.FC = () => {
           </p>
 
           <Pagination
-            currentPage={currentPageCustom}
-            totalPages={30}
-            onPageChange={setCurrentPageCustom}
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
             className="justify-center"
             buttonClassName="rounded-full px-4 py-2 mx-1 bg-white border-2 border-gray-300 hover:border-blue-500 hover:bg-blue-50 transition-all duration-200 font-medium"
             activeClassName="bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700"
@@ -116,7 +115,7 @@ export const App: React.FC = () => {
             totalPages={15}
             onPageChange={setCurrentPage}
             className="justify-center"
-            renderButton={({ page, isActive, isDisabled, onClick, children }) => (
+            renderButton={({ isActive, isDisabled, onClick, children }) => (
               <button
                 onClick={onClick}
                 disabled={isDisabled}
